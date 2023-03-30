@@ -1,0 +1,9 @@
+milestone will be done whene targated date is the current date ⤵
+↪ -> now check is I done previous milestone (today: 5, prev: 4, next: 6)
+
+
+#Improve Features
+1=> I can create a new option "Recent Books"
+2=> I dynamically change title and days of extra milestone
+
+DB_URL=mongodb://127.0.0.1:27017/track-study
