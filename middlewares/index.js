@@ -3,7 +3,9 @@ const express = require("express");
 const cors = require("cors");
 
 const middlewares = [
-    cors(),
+    cors({
+        origin: "https://track-study-frontend.vercel.app/"
+    }),
     morgan("dev"),
     express.json()
 ];
