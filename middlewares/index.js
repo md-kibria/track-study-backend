@@ -4,7 +4,8 @@ const cors = require("cors");
 
 const middlewares = [
     cors({
-        origin: "https://track-study-frontend.vercel.app/"
+        origin: "https://track-study-frontend.vercel.app/",
+        methods: ['GET', 'PUT', 'POST', 'PATCH', 'DELETE']
     }),
     morgan("dev"),
     express.json()
