@@ -6,12 +6,6 @@ const routes = require("../routes");
 const app = express();
 dotenv.config();
 
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*")
-    res.setHeader("Access-Control-Allow-Methods", "*")
-    res.setHeader("Access-Control-Allow-Headers", "*")
-})
-
 app.use(express.static("public"));
 app.use(middlewares);
 app.use(routes);
