@@ -9,8 +9,8 @@ const app = express();
 dotenv.config();
 
 app.use(cors())
-morgan("dev"),
-express.json()
+app.use(morgan("dev"))
+app.use(express.json())
 
 app.get('/test', (req, res) => {
     res.status(200).json({
